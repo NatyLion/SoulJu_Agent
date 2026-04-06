@@ -1,0 +1,48 @@
+﻿# PLANO DE CORREÇÃO — CAP 2
+# Baseado na revisão estratégica (strategic_review_cap02.md)
+# Cole este prompt no Claude Code para executar TODAS as correções de uma vez
+
+Leia output/cap02_framework_FINAL.md e output/strategic_review_cap02.md.
+
+Aplique as seguintes 7 correções ao cap02_framework_FINAL.md. NÃO remova nenhum conteúdo técnico existente. Apenas ADICIONE ou REESCREVA os trechos indicados.
+
+CORREÇÃO 1 (ALTA) — Frase-síntese no início de cada Eixo:
+- No início da seção 1.1 adicione: "Este eixo é a resposta à pergunta: por que uma mulher de 47 anos acorda cansada mesmo depois de 8 horas de sono? A resposta está aqui — em cada complexo enzimático que a queda de estradiol foi desligando, um a um, ao longo de uma década."
+- No início da seção 2.1 adicione: "Este eixo é a resposta à pergunta: por que uma mulher faz musculação, come proteína, e mesmo assim perde músculo a cada ano depois dos 40? A resposta tem nome: resistência anabólica. E tem mecanismo: MuRF-1 + cortisol + ↓E2, operando em silêncio."
+- No início da seção 3.1 adicione: "Este eixo é a resposta à pergunta: por que envelhecemos? Não a resposta filosófica — a molecular. Células que acumulam dano, param de funcionar mas não morrem, e secretam inflamação crônica. A SoulJu tem 3 ingredientes que atacam este processo diretamente."
+- No início da seção 4.1 adicione: "Este eixo é a resposta à pergunta: por que intestino, hormônios e humor são o mesmo problema? Porque existe um eixo intestino-fígado-hormônio onde cada parte modula as outras — e a menopausa o desestabiliza nas três pontas simultaneamente."
+
+CORREÇÃO 2 (ALTA) — Frase de agência ao final de cada seção X.4:
+- Final de 1.4: "Estes dados não são inevitabilidade. São o mapa de onde intervir. Para cada ponto desta timeline, existe uma intervenção SoulJu com mecanismo molecular documentado."
+- Final de 2.4: "A perda muscular não é um destino. É CPT-1, mTORC1 e MuRF-1 com intervenção nutricional subótima. Com HMB, leucina e glicina nas doses certas, o equilíbrio pode ser restaurado."
+- Final de 3.4: "Senescência não é sentença. É biologia com endereço molecular. Quercetina elimina as células zumbis. RiaGev restaura o NAD⁺. Resveratrol ativa as sirtuínas. Juntos, revertem o que parecia irreversível."
+- Final de 4.4: "O ciclo cortisol-intestino-inflamação-gordura visceral não é inevitável. Ashwagandha reduz cortisol 23%. L. gasseri restaura o microbioma. PHGG reconstrói a barreira. O sistema pode ser restaurado."
+
+CORREÇÃO 3 (MÉDIA) — Ganchos narrativos de abertura nos Eixos 2, 3 e 4:
+- Antes da seção 2.1, adicione: "O músculo de uma mulher de 45 anos está em guerra. De um lado: mTORC1, tentando construir. Do outro: MuRF-1 + cortisol + ↓E2, desmontando peça por peça. Na maioria das mulheres, a guerra está sendo perdida — não por falta de proteína, mas por resistência anabólica."
+- Antes de 3.1: "Existe um tipo de célula no seu corpo que parou de funcionar mas se recusa a morrer. Ela não produz nada útil. Ela secreta inflamação. Ela contamina as células vizinhas. Cientistas a chamam de célula senescente. No mercado de suplementos, ninguém fala sobre ela. Na SoulJu, temos um ingrediente que a elimina."
+- Antes de 4.1: "Em 2010, ninguém sabia que as bactérias intestinais controlavam a reabsorção de estrogênio. Em 2024, isto é estabelecido. O estroboloma determina quanto estrogênio você excreta vs. reabsorve. E a menopausa o desregula. Este é o eixo que conecta intestino, hormônios e inflamação num único sistema."
+
+CORREÇÃO 4 (MÉDIA) — Linha NHANES no início de cada X.4:
+- Início de 1.4: "NHANES n=11.933: Energia é o preditor #1 de qualidade do sono feminino (feature importance 19.9%), superando stress, hormonal e inflamação. O que segue é o mecanismo molecular por trás deste dado."
+- Início de 2.4: "NHANES: feature importance 'Hormonal' = 16.8% — o segundo maior preditor. É o eixo proteico que traduz esta queda hormonal em perda muscular silenciosa."
+- Início de 3.4: "NHANES: 'Inflamação' = 15.7% de feature importance. Senescência celular é a via molecular desta inflamação sistêmica de baixo grau."
+- Início de 4.4: "NHANES: Cluster 'Transição Silenciosa' (32% das mulheres) — Hormonal 7.7/10 + Pele 6.0. Perfil de disbiose estroboloma + perda de colágeno. Este eixo explica por quê."
+
+CORREÇÃO 5 (MÉDIA) — Reescrever o primeiro parágrafo de GlucoVantage em first principles:
+Substituir o texto que começa com comparação de F% por: "A pergunta não é 'como melhorar a berberina'. A pergunta é: qual é o mecanismo molecular mínimo necessário para ativar AMPK hepato-muscular com o mínimo de dose e máxima biodisponibilidade? A resposta é DHB — a forma reduzida que o intestino tenta criar a partir da berberina. GlucoVantage® fornece DHB diretamente, pulando a etapa de conversão intestinal. Resultado: 5x mais biodisponibilidade (Turner 2019) com 1/5 da dose. Menor dose. Maior resultado. Ingrediente mais inteligente."
+
+CORREÇÃO 6 (BAIXA) — Referências às personas em cada X.4:
+- Em 1.4: "Esta é a bioquímica da Guerreira Exausta (Cluster 1, 40%, Stress 6.4, Energia 6.0): não é stress. É mitocôndria."
+- Em 2.4: "Esta é a bioquímica da Transição Silenciosa (Cluster 0, 32%): corpos que mudam sem aviso, músculo que some sem explicação."
+- Em 3.4: "Os 3 clusters NHANES convergem aqui: todas as personas têm inflamação crônica de baixo grau. A diferença é a porta de entrada."
+- Em 4.4: "Esta é a bioquímica do Fogo Interno (Cluster 2, 28%, Pele 7.6, Inflamação 7.4): estroboloma + barreira intestinal comprometida."
+
+CORREÇÃO 7 (BAIXA) — Uma frase em segunda pessoa por eixo na seção X.4:
+- Em 1.4: "Se você tem entre 38-48 anos e sente que sua energia diminuiu de forma inexplicável — não é na sua cabeça. É CPT-1. É PGC-1α. É a biologia que ninguém te explicou."
+- Em 2.4: "Se você treina, come proteína, e mesmo assim perde força — não é falta de esforço. É resistência anabólica. E tem solução molecular."
+- Em 3.4: "Se você sente que inflamação, cansaço e envelhecimento acelerado chegaram juntos — é porque chegaram. Têm o mesmo endereço: NAD⁺ em queda."
+- Em 4.4: "Se seu intestino, humor e peso mudaram ao mesmo tempo — não é coincidência. É o eixo 4 em disfunção. E ele responde a intervenção."
+
+Após aplicar TODAS as 7 correções, sobrescreva output/cap02_framework_FINAL.md com a versão corrigida.
+
