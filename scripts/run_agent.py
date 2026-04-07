@@ -1,5 +1,5 @@
 from pathlib import Path
-from llm_client import run_llm
+from scripts.llm_client import run_llm 
 
 def run_agent(agent_file: str, task: str, output_file: str) -> str:
     agent_path = Path(agent_file)
