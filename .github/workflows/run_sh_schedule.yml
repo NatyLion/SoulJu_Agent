@@ -1,0 +1,41 @@
+name: Run SoulJu Pipeline (run.sh)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * *' # 09:00 UTC diariamente
+
+concurrency:
+  group: soulju-run-sh
+  cancel-in-progress: false
+
+jobs:
+  run-playbook:
+    name: Gerar capítulos com run.sh
+    runs-on: self-hosted
+    timeout-minutes: 360
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validar Claude CLI
+        run: |
+          command -v claude
+          claude --version
+
+      - name: Status inicial
+        run: ./run.sh status
+
+      - name: Gerar todos os capítulos
+        run: ./run.sh all
+
+      - name: Garantir compilado final
+        run: ./run.sh compile
+
+      - name: Upload dos artefatos
+        uses: actions/upload-artifact@v4
+        with:
+          name: soulju-playbook-output-${{ github.run_id }}
+          path: output/
+          if-no-files-found: error
