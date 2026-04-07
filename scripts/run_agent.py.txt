@@ -1,0 +1,17 @@
+from pathlib import Path
+from llm_client import run_llm
+
+def run_agent(agent_file, task, output_file):
+    agent = Path(agent_file).read_text(encoding="utf-8")
+
+    prompt = f"""
+{agent}
+
+TAREFA:
+{task}
+"""
+
+    result = run_llm(prompt)
+
+    Path(output_file).write_text(result, encoding="utf-8")
+    return result
