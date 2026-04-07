@@ -25,6 +25,21 @@ chmod +x run.sh
 ./run.sh compile
 ```
 
+### Execução automática diária (GitHub Actions self-hosted)
+O projeto inclui um workflow pronto em `.github/workflows/run_sh_schedule.yml` para rodar o pipeline automaticamente.
+
+Pré-requisitos do runner:
+- Runner **self-hosted** com `claude` instalado.
+- Claude CLI já autenticado no usuário que executa o runner (sessão persistente).
+
+Fluxo executado:
+1. `./run.sh status`
+2. `./run.sh all`
+3. `./run.sh compile`
+4. Upload do diretório `output/` como artifact.
+
+Também é possível disparar manualmente em **Actions → Run SoulJu Pipeline (run.sh) → Run workflow**.
+
 ### Método 2: Claude Code direto (mais controle)
 ```bash
 # Navegar para o diretório
