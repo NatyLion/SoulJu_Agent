@@ -1,7 +1,7 @@
 from pathlib import Path
 import re
-from run_agent import run_agent
-from llm_client import run_llm
+from scripts.run_agent import run_agent
+from scripts.llm_client import run_llm
 
 THRESHOLD = 8
 
