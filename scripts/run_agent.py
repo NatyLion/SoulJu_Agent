@@ -1,5 +1,6 @@
 from pathlib import Path
-from scripts.llm_client import run_llm 
+from scripts.llm_client import run_llm
+
 
 def run_agent(agent_file: str, task: str, output_file: str) -> str:
     agent_path = Path(agent_file)
@@ -23,7 +24,6 @@ TAREFA:
 
     output_path = Path(output_file)
     output_path.parent.mkdir(parents=True, exist_ok=True)
-
     output_path.write_text(result, encoding="utf-8")
 
     return result
