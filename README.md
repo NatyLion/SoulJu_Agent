@@ -150,3 +150,30 @@ O output é Markdown. Para converter em PPTX premium com identidade SoulJu:
 - **Dra. Priscila Lima** — Farmacêutica UFRGS, ex-ANVISA. Caps 6, 9
 - **Luísa Rezende, MSc** — Nutrição Funcional USP. Caps 1, 5, 8, 10
 - **Thiago Moretti** — Design ESPM. Design editorial final
+
+## Usar com OpenAI API (novo)
+
+Se você quiser rodar os agentes via OpenAI (em vez do CLI `claude`), use o runner Python:
+
+```bash
+# 1) Defina a chave (sessão atual)
+export OPENAI_API_KEY="sua_chave"
+
+# opcional: escolher modelo
+export OPENAI_MODEL="gpt-4.1-mini"
+
+# 2) Rodar
+python run_openai.py status
+python run_openai.py 2
+python run_openai.py all
+python run_openai.py compile
+```
+
+Alternativamente, crie um arquivo `.env` na raiz com:
+
+```env
+OPENAI_API_KEY=sua_chave
+OPENAI_MODEL=gpt-4.1-mini
+```
+
+> O script `run_openai.py` lê `.env` automaticamente.
